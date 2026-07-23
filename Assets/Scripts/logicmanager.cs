@@ -17,7 +17,7 @@ public class logicmanager : MonoBehaviour
     private float difficulty_rate = 0.5f;
     public float bonousspeed =0;
     public float bonouslife =0;
-    public double bulletrate=0.05;
+    public double bulletrate=0;
     private int Score ;
     private int trackingscore = 0;
     private int difficulty = 1;
@@ -100,7 +100,7 @@ public class logicmanager : MonoBehaviour
         bonouslife++;
         player.movespeed += 0.5f;
         bonousspeed++;
-        bulletrate++;
+        bulletrate+=0.05;
     
     }
 }
