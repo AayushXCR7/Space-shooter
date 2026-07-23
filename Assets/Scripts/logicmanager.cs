@@ -13,6 +13,7 @@ public class logicmanager : MonoBehaviour
     [SerializeField] private buletspwaner bulletspwaner;
     [SerializeField] private GameObject[] boss;
     [SerializeField] private GameObject[] enemies;
+    [SerializeField] private GameObject[] bonousbullets;
     private float difficulty_rate = 0.5f;
     public float bonousspeed =0;
     public float bonouslife =0;
@@ -50,6 +51,7 @@ public class logicmanager : MonoBehaviour
         }
         if (trackingscore > 200 && difficulty == 2)
         {
+            bonousbullets[0].SetActive(true);
             difficulty = 3;
             increasing_difficulty();
         }
