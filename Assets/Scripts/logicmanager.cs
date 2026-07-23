@@ -15,6 +15,7 @@ public class logicmanager : MonoBehaviour
     public float bonousspeed =0;
     public float bonouslife =0;
     private int Score ;
+    private int trackingscore = 0;
     private int difficulty = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static logicmanager instance;
@@ -37,21 +38,33 @@ public class logicmanager : MonoBehaviour
     public void updatescore(int point)
     {
         Score += point;
+        trackingscore += point;
         scoretext.text = Score.ToString();
-        if (Score > 100 && difficulty == 1)
+        if (trackingscore > 100 && difficulty == 1)
         {
             difficulty = 2;
             increasing_difficulty();
         }
-        if (Score > 200 && difficulty == 2)
+        if (trackingscore > 200 && difficulty == 2)
         {
             difficulty = 3;
             increasing_difficulty();
         }
-        if (Score > 300 && difficulty == 3)
+        if (trackingscore > 300 && difficulty == 3)
         {
             difficulty = 4;
             increasing_difficulty();
+        }
+        if(trackingscore>400 && difficulty ==4)
+        {
+            difficulty = 5;
+            increasing_difficulty();
+        }
+        if (trackingscore>500 && difficulty==5)
+        {
+            difficulty = 1;
+            trackingscore = 0;
+
         }
         
 
