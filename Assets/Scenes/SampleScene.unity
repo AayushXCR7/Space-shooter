@@ -1028,6 +1028,7 @@ MonoBehaviour:
   - {fileID: 1676316955}
   bonousspeed: 0
   bonouslife: 0
+  bulletrate: 0
   scoretext: {fileID: 600219153}
 --- !u!1 &1371828008
 GameObject:
