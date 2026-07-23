@@ -11,12 +11,15 @@ public class logicmanager : MonoBehaviour
     [SerializeField] private Playermovement player;
     
     [SerializeField] private buletspwaner bulletspwaner;
+    [SerializeField] private GameObject[] boss;
+    [SerializeField] private GameObject[] enemies;
     private float difficulty_rate = 0.5f;
     public float bonousspeed =0;
     public float bonouslife =0;
     private int Score ;
     private int trackingscore = 0;
     private int difficulty = 1;
+    private int bosses;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static logicmanager instance;
     [SerializeField] private TMP_Text scoretext;
@@ -62,13 +65,32 @@ public class logicmanager : MonoBehaviour
         }
         if (trackingscore>500 && difficulty==5)
         {
+            bosses++;
             difficulty = 1;
             trackingscore = 0;
+            if (bosses == 1)
+            {
+                boss[0].SetActive(true);
+                if (boss[0]!=null)
+                {
+                    for(int i =0; i<3; i++)
+                    {
+                        enemies[i].SetActive(false);
+                    }
+                }
+                else
+                {
+                    for(int i=0; i<3; i++)
+                    {
+                        enemies[i].SetActive(true);
+                    }
+                }
+            }
+
+            }
+
 
         }
-        
-
-    }
     private void increasing_difficulty()
     {
         spwaner.spwanrate -= difficulty_rate;
