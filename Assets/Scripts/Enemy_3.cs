@@ -13,6 +13,14 @@ public class Enemy_3 : MonoBehaviour
     {
         life += logicmanager.instance.bonouslife;
         movespeed += logicmanager.instance.bonousspeed;
+        if(life > 6)
+        {
+            life = 6;
+        }
+        if(movespeed>10)
+        {
+            movespeed = 10;
+        }
     }
 
     // Update is called once per frame

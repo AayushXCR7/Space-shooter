@@ -12,7 +12,15 @@ public class enemyscript : MonoBehaviour
     {
         life += logicmanager.instance.bonouslife;
         movespeed += logicmanager.instance.bonousspeed;
-        
+        if (life > 4)
+        {
+            life = 4;
+        }
+        if (movespeed > 8)
+        {
+            movespeed = 8;
+        }
+
     }
 
     // Update is called once per frame
