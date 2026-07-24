@@ -44,8 +44,9 @@ public class boss1script : MonoBehaviour
         while (Vector3.Distance(transform.position, target.position) > 0.05)
         {
             transform.position = Vector3.MoveTowards(transform.position, target.position, movespeed * Time.deltaTime);
+            yield return null;
         }
-        yield return null;
+
     }
     private IEnumerator attack()
     {
