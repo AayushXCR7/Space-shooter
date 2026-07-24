@@ -15,6 +15,10 @@ public class enemyspwaner : MonoBehaviour
     void Start()
     {
         StartCoroutine(spwaner());
+        if(spwanrate==0.5f)
+        {
+            spwanrate = 0.5f;
+        }
     }
 
     // Update is called once per frame
