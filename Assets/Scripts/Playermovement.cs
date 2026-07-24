@@ -7,7 +7,10 @@ public class Playermovement : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        if(movespeed>9)
+        {
+            movespeed = 9;
+        }
     }
 
     // Update is called once per frame

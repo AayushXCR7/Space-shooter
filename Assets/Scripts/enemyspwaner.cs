@@ -15,7 +15,7 @@ public class enemyspwaner : MonoBehaviour
     void Start()
     {
         StartCoroutine(spwaner());
-        if(spwanrate==0.5f)
+        if(spwanrate<0.5f)
         {
             spwanrate = 0.5f;
         }
