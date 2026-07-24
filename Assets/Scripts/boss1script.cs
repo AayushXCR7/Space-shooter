@@ -37,6 +37,7 @@ public class boss1script : MonoBehaviour
             // move to point 2
             yield return StartCoroutine(moveto(TargetB));
             //wait 3 second to fire at point b 
+            yield return StartCoroutine(attack());
         }
     }
     private IEnumerator moveto(Transform target)
