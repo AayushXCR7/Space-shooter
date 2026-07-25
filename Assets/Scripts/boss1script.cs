@@ -9,6 +9,7 @@ public class boss1script : MonoBehaviour
     [SerializeField] private Transform TargetA;
     [SerializeField] private Transform TargetB;
     [SerializeField] private GameObject bulletprefab;
+    [SerializeField] private Transform firepoint;
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -63,6 +64,6 @@ public class boss1script : MonoBehaviour
     }
     private void shoot()
     {
-        Instantiate(bulletprefab, transform.position, Quaternion.identity);
+        Instantiate(bulletprefab, firepoint.position, Quaternion.identity);
     }
 }
