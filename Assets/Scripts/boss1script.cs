@@ -10,6 +10,8 @@ public class boss1script : MonoBehaviour
     [SerializeField] private Transform TargetB;
     [SerializeField] private GameObject bulletprefab;
     [SerializeField] private Transform firepoint;
+    [SerializeField] private Transform player;
+
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -64,6 +66,8 @@ public class boss1script : MonoBehaviour
     }
     private void shoot()
     {
-        Instantiate(bulletprefab, firepoint.position, Quaternion.identity);
+        GameObject bullet= Instantiate(bulletprefab, firepoint.position, Quaternion.identity);
+        Vector2 dir = (player.position - firepoint.position).normalized;
+        bullet.GetComponent<boss1bulletscript>().setdirection(dir);
     }
 }
