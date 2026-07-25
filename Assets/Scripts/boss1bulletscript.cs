@@ -3,7 +3,7 @@ using UnityEngine;
 public class boss1bulletscript : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private float movespeed = 8;
+    private float movespeed = 6;
     private Vector2 direction;
     void Start()
     {

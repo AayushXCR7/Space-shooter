@@ -16,7 +16,7 @@ public class boss1script : MonoBehaviour
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private float attacking_time = 3;
-    private float attacking_rate = 0.2f;
+    private float attacking_rate = 0.4f;
     void Start()
     {
         StartCoroutine(boss());
