@@ -36,7 +36,11 @@ public class boss1script : MonoBehaviour
 
             if (life == 0)
             {
-                Destroy(gameObject);
+                gameObject.SetActive(false);
+                for (int i = 0; i < 3; i++)
+                {
+                   logicmanager.instance.enemies[i].SetActive(true);
+                }
             }
             Destroy(collision.gameObject);
         }

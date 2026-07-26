@@ -12,8 +12,8 @@ public class logicmanager : MonoBehaviour
 
     [SerializeField] private buletspwaner bulletspwaner;
     [SerializeField] private buletspwaner bulletspwaner2;
-    [SerializeField] private GameObject[] boss;
-    [SerializeField] private GameObject[] enemies;
+    [SerializeField] private GameObject boss;
+    [SerializeField] public GameObject[] enemies;
     
     private float difficulty_rate = 0.5f;
     public float bonousspeed =0;
@@ -22,7 +22,7 @@ public class logicmanager : MonoBehaviour
     public int Score ;
     private int trackingscore = 0;
     private int difficulty = 1;
-    private int bosses=0;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static logicmanager instance;
     [SerializeField] private TMP_Text scoretext;
@@ -53,7 +53,7 @@ public class logicmanager : MonoBehaviour
         }
         if (trackingscore > 200 && difficulty == 2)
         {
-            
+
             difficulty = 3;
             increasing_difficulty();
         }
@@ -67,73 +67,31 @@ public class logicmanager : MonoBehaviour
             difficulty = 5;
             increasing_difficulty();
         }
-        if (trackingscore > 500 && difficulty == 5)
+        if (trackingscore > 500 && difficulty == 5 && boss.activeSelf == false)
         {
 
-            bosses++;
+
             difficulty = 1;
             trackingscore = 0;
-            if (bosses == 1)
-            {
-                boss[0].SetActive(true);
-                if (boss[0] != null)
-                {
-                    for (int i = 0; i < 3; i++)
-                    {
-                        enemies[i].SetActive(false);
-                    }
-                }
-                else
-                {
-                    for (int i = 0; i < 3; i++)
-                    {
-                        enemies[i].SetActive(true);
-                    }
-                }
-            }
-            if (bosses == 2)
-            {
-                boss[1].SetActive(true);
-                if (boss[1] != null)
-                {
-                    for (int i = 0; i < 3; i++)
-                    {
-                        enemies[i].SetActive(false);
-                    }
-                }
-                else
-                {
-                    for (int i = 0; i < 3; i++)
-                    {
-                        enemies[i].SetActive(true);
-                    }
-                }
-            }
-            if (bosses == 3)
-            {
-                boss[2].SetActive(true);
-                if (boss[2] != null)
-                {
-                    for (int i = 0; i < 3; i++)
-                    {
-                        enemies[i].SetActive(false);
-                    }
-                }
-                else
-                {
-                    for (int i = 0; i < 3; i++)
-                    {
-                        enemies[i].SetActive(true);
-                    }
-                }
-                bosses = 0;
 
 
-            }
+            boss.SetActive(true);
 
+            for (int i = 0; i < 3; i++)
+            {
+                enemies[i].SetActive(false);
+            }
 
         }
     }
+    
+
+
+
+
+
+
+
     private void increasing_difficulty()
     {
         spwaner.spwanrate -= difficulty_rate;
