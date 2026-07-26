@@ -9,16 +9,17 @@ public class logicmanager : MonoBehaviour
     [SerializeField] private enemyspwaner spwaner;
     
     [SerializeField] private Playermovement player;
-    
+
     [SerializeField] private buletspwaner bulletspwaner;
+    [SerializeField] private buletspwaner bulletspwaner2;
     [SerializeField] private GameObject[] boss;
     [SerializeField] private GameObject[] enemies;
-    [SerializeField] private GameObject[] bonousbullets;
+    
     private float difficulty_rate = 0.5f;
     public float bonousspeed =0;
     public float bonouslife =0;
     public float bulletrate=0;
-    private int Score ;
+    public int Score ;
     private int trackingscore = 0;
     private int difficulty = 1;
     private int bosses=0;
@@ -52,7 +53,7 @@ public class logicmanager : MonoBehaviour
         }
         if (trackingscore > 200 && difficulty == 2)
         {
-            bonousbullets[0].SetActive(true);
+            
             difficulty = 3;
             increasing_difficulty();
         }
@@ -139,6 +140,7 @@ public class logicmanager : MonoBehaviour
         bonouslife++;
         player.movespeed += 0.5f;
         bonousspeed++;
-        bulletspwaner.spwanrate -= 0.05f;    
+        bulletspwaner.spwanrate -= 0.05f;
+        bulletspwaner2.spwanrate -= 0.05f;
     }
 }

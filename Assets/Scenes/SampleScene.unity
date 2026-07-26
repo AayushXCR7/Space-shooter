@@ -604,6 +604,7 @@ GameObject:
   - component: {fileID: 868626222}
   - component: {fileID: 868626221}
   - component: {fileID: 868626223}
+  - component: {fileID: 868626224}
   m_Layer: 0
   m_Name: Boss1
   m_TagString: Untagged
@@ -704,6 +705,59 @@ MonoBehaviour:
   bulletprefab: {fileID: 4072202895349170944, guid: bb3628df5d048384eb8df8e558b622a9, type: 3}
   firepoint: {fileID: 603673000}
   player: {fileID: 1113423275}
+--- !u!60 &868626224
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868626220}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1, y: 0.8828125}
+    newSize: {x: 1, y: 0.8828125}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.26209623, y: 0.4567449}
+      - {x: -0.5290309, y: 0}
+      - {x: -0.2741924, y: -0.44622165}
+      - {x: 0.2766115, y: -0.45464015}
+      - {x: 0.5266117, y: 0.004209321}
+      - {x: 0.25, y: 0.46095404}
+  m_UseDelaunayMesh: 1
 --- !u!1 &947960645
 GameObject:
   m_ObjectHideFlags: 0
@@ -942,6 +996,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   bulletspwaner: {fileID: 1050558102}
+  bulletspwaner2: {fileID: 1676316955}
   movespeed: 5
 --- !u!212 &1113423274
 SpriteRenderer:
@@ -1164,17 +1219,17 @@ MonoBehaviour:
   spwaner: {fileID: 1028167605}
   player: {fileID: 1113423271}
   bulletspwaner: {fileID: 1050558103}
+  bulletspwaner2: {fileID: 1676316956}
   boss:
   - {fileID: 868626220}
   enemies:
   - {fileID: 8546378382405700911, guid: 94d5747d94b317345964f1bae8f23dd6, type: 3}
   - {fileID: 9003986189845178617, guid: d5bb7e2623d23f34f943a42076f82ca5, type: 3}
   - {fileID: 6394880555827469835, guid: 6aa888b42b829d342bfbb021d1d60716, type: 3}
-  bonousbullets:
-  - {fileID: 1676316955}
   bonousspeed: 0
   bonouslife: 0
   bulletrate: 0
+  Score: 0
   scoretext: {fileID: 600219153}
 --- !u!1 &1371828008
 GameObject:

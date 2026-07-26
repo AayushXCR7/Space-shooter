@@ -3,6 +3,7 @@ using UnityEngine;
 public class Playermovement : MonoBehaviour
 {
     [SerializeField] private GameObject bulletspwaner;
+    [SerializeField] private GameObject bulletspwaner2;
     public float movespeed = 6f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -22,6 +23,10 @@ public class Playermovement : MonoBehaviour
         if (Input.GetMouseButton(0))
         {
             bulletspwaner.SetActive(true);
+            if(logicmanager.instance.Score > 200)
+                {
+                bulletspwaner2.SetActive(true);
+            }
             // physical mouse cursor moniter  ko kun thau ma xa vanera capture garxa (pixel ma calculate hunxa)
             Vector3 mousescreenpos = Input.mousePosition;
 
@@ -40,8 +45,9 @@ public class Playermovement : MonoBehaviour
         else
         {
             bulletspwaner.SetActive(false);
+            bulletspwaner2.SetActive(false);
         }
-        
+
 
     }
 }
