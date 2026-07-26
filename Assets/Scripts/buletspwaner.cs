@@ -4,7 +4,7 @@ using UnityEngine;
 public class buletspwaner : MonoBehaviour
 {
     [SerializeField] private GameObject bulletprefab;
-    public double spwanrate = 0.5f;
+    public float spwanrate = 0.5f;
     private float timer = 0f;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -12,7 +12,7 @@ public class buletspwaner : MonoBehaviour
         spwanrate -= logicmanager.instance.bulletrate;
         if (spwanrate < 0.2)
         {
-            spwanrate = 0.2;
+            spwanrate = 0.2f;
         }
     }
 
