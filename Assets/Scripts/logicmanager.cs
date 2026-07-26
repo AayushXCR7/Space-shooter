@@ -139,7 +139,6 @@ public class logicmanager : MonoBehaviour
         bonouslife++;
         player.movespeed += 0.5f;
         bonousspeed++;
-        bulletrate+=0.05f;
-    
+        bulletspwaner.spwanrate -= 0.05f;    
     }
 }

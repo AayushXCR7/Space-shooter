@@ -9,7 +9,7 @@ public class buletspwaner : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        spwanrate -= logicmanager.instance.bulletrate;
+       
         if (spwanrate < 0.2)
         {
             spwanrate = 0.2f;
