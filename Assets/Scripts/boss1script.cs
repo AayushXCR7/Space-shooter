@@ -11,6 +11,7 @@ public class boss1script : MonoBehaviour
     [SerializeField] private GameObject bulletprefab;
     [SerializeField] private Transform firepoint;
     [SerializeField] private Transform player;
+    private int life = 50;
 
 
 
@@ -26,6 +27,19 @@ public class boss1script : MonoBehaviour
     void Update()
     {
         
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Bullet"))
+        {
+            life--;
+
+            if (life == 0)
+            {
+                Destroy(gameObject);
+            }
+            Destroy(collision.gameObject);
+        }
     }
     private IEnumerator boss()
     {
@@ -70,4 +84,5 @@ public class boss1script : MonoBehaviour
         Vector2 dir = (player.position - firepoint.position).normalized;
         bullet.GetComponent<boss1bulletscript>().setdirection(dir);
     }
+
 }
