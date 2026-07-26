@@ -10,6 +10,10 @@ public class buletspwaner : MonoBehaviour
     void Start()
     {
         spwanrate -= logicmanager.instance.bulletrate;
+        if (spwanrate < 0.2)
+        {
+            spwanrate = 0.2;
+        }
     }
 
     // Update is called once per frame
