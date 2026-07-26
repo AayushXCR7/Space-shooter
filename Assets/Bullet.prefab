@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 7661346940035642710}
   - component: {fileID: 8725965533279151209}
   - component: {fileID: 7158538389676574340}
-  - component: {fileID: -4093421540519040368}
+  - component: {fileID: 4496458211943545047}
   m_Layer: 0
   m_Name: Bullet
   m_TagString: Bullet
@@ -28,8 +28,8 @@ Transform:
   m_GameObject: {fileID: 2118154264907348874}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.002000004, y: 0.64199996, z: 0}
-  m_LocalScale: {x: 0.6476403, y: 0.562259, z: 1}
+  m_LocalPosition: {x: 0.0027, y: 0.64199996, z: 0}
+  m_LocalScale: {x: 0.65321, y: 0.562259, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -107,8 +107,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: '::'
   movespeed: 5
---- !u!58 &-4093421540519040368
-CircleCollider2D:
+--- !u!60 &4496458211943545047
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -142,4 +142,30 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_Radius: 0.5
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.24, y: 0.69}
+    newSize: {x: 0.24, y: 0.69}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.011359228, y: 0.35926014}
+      - {x: -0.03931347, y: 0.328363}
+      - {x: -0.07217573, y: 0.28588378}
+      - {x: -0.08931359, y: 0.24360976}
+      - {x: -0.1013171, y: 0.17032841}
+      - {x: -0.1198607, y: 0.1102712}
+      - {x: -0.12230642, y: 0.01712544}
+      - {x: -0.12080041, y: -0.20387371}
+      - {x: -0.10951212, y: -0.2590051}
+      - {x: -0.11386257, y: -0.33311656}
+      - {x: 0.117954195, y: -0.33549318}
+      - {x: 0.10886364, y: -0.2726803}
+      - {x: 0.117590204, y: -0.22710565}
+      - {x: 0.12603728, y: 0.10162985}
+      - {x: 0.07499317, y: 0.2374661}
+  m_UseDelaunayMesh: 1

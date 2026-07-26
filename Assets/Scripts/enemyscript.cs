@@ -39,7 +39,6 @@ public class enemyscript : MonoBehaviour
         if (collision.gameObject.CompareTag("Bullet"))
         {
             life--;
-            
             if (life == 0)
             {
 
