@@ -7,8 +7,8 @@ public class enemyspwaner : MonoBehaviour
     [SerializeField] private GameObject[] enemies;
     public float spwanrate = 2f;
     private bool couldspwan = true;
-    private float minx = -8.5f;
-    private float maxx = 9.4f;
+    private float minx = -3.3f;
+    private float maxx = 10f;
     private float xposition;
     private Vector3 spwanposition;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
