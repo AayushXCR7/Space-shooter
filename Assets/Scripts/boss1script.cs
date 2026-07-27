@@ -1,8 +1,10 @@
-using UnityEngine;
 using System.Collections;
+using System.Drawing;
+using UnityEngine;
 
 public class boss1script : MonoBehaviour
 {
+    public int point = 100;
     private float movespeed = 8;
     private bool ismoving = true;
     private bool isattacking = true;
@@ -36,6 +38,8 @@ public class boss1script : MonoBehaviour
 
             if (life == 0)
             {
+                logicmanager.instance.updatescore(point);
+                logicmanager.instance.trackingscore = 0;
                 gameObject.SetActive(false);
                 for (int i = 0; i < 3; i++)
                 {

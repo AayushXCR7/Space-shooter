@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: bc41ea1b419961641907477041f89e2f
+guid: e34512173edeaa44aaf0f7be6cce7e1b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1002726099234284516
-    second: Boss Bullet_0
+      213: 1710590815611572994
+    second: boss1-ani-Sheet_0
+  - first:
+      213: 7621492697954069540
+    second: boss1-ani-Sheet_1
+  - first:
+      213: -4296705106531525828
+    second: boss1-ani-Sheet_2
+  - first:
+      213: 6728701040463231205
+    second: boss1-ani-Sheet_3
+  - first:
+      213: -1740001384527286414
+    second: boss1-ani-Sheet_4
+  - first:
+      213: -3614237078676741876
+    second: boss1-ani-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -126,23 +141,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Boss Bullet_0
+      name: boss1-ani-Sheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 6
-        width: 62
-        height: 56
+        x: 58
+        y: 108
+        width: 45
+        height: 88
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 4e36fd713166aed00800000000000000
-      internalID: 1002726099234284516
+      spriteID: 203d290a84d3db710800000000000000
+      internalID: 1710590815611572994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1-ani-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 88
+        width: 155
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42c29c77a3bf4c960800000000000000
+      internalID: 7621492697954069540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1-ani-Sheet_2
+      rect:
+        serializedVersion: 2
+        x: 169
+        y: 108
+        width: 45
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3bd49478790f54c0800000000000000
+      internalID: -4296705106531525828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1-ani-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 108
+        width: 45
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8bc9432f5216d50800000000000000
+      internalID: 6728701040463231205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1-ani-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 89
+        width: 156
+        height: 110
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27f209ea5f54ad7e0800000000000000
+      internalID: -1740001384527286414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: boss1-ani-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 425
+        y: 108
+        width: 45
+        height: 88
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c016d67a686a7ddc0800000000000000
+      internalID: -3614237078676741876
       vertices: []
       indices: 
       edges: []
@@ -151,7 +276,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 3548321686ab45e4bbd4f33bede76071
     internalID: 0
     vertices: []
     indices: 
@@ -161,7 +286,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Boss Bullet_0: 1002726099234284516
+      boss1-ani-Sheet_0: 1710590815611572994
+      boss1-ani-Sheet_1: 7621492697954069540
+      boss1-ani-Sheet_2: -4296705106531525828
+      boss1-ani-Sheet_3: 6728701040463231205
+      boss1-ani-Sheet_4: -1740001384527286414
+      boss1-ani-Sheet_5: -3614237078676741876
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
