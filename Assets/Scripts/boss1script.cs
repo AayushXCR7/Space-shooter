@@ -5,7 +5,7 @@ using UnityEngine;
 public class boss1script : MonoBehaviour
 {
     public int point = 100;
-    private float movespeed = 8;
+    private float movespeed = 10;
     private bool ismoving = true;
     private bool isattacking = true;
     [SerializeField] private Transform TargetA;
@@ -18,8 +18,8 @@ public class boss1script : MonoBehaviour
 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private float attacking_time = 3;
-    private float attacking_rate = 0.4f;
+    private float attacking_time = 4.5f;
+    private float attacking_rate = 0.3f;
     void Start()
     {
         StartCoroutine(boss());
