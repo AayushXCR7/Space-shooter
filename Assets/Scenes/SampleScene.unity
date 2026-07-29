@@ -980,6 +980,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &972944574
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 972944575}
+  m_Layer: 0
+  m_Name: gameovermenu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &972944575
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 972944574}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -6.70397, y: 0.83085, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1028167604
 GameObject:
   m_ObjectHideFlags: 0
@@ -1297,6 +1328,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 54fc78e526405724c93ba46d4ce0a183, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  restart_menu: {fileID: 972944574}
+  Player_health: 3
 --- !u!1 &1227292614
 GameObject:
   m_ObjectHideFlags: 0
@@ -1518,3 +1551,4 @@ SceneRoots:
   - {fileID: 868626222}
   - {fileID: 302410483}
   - {fileID: 947960646}
+  - {fileID: 972944575}
