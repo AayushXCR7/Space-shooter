@@ -43,8 +43,10 @@ public class enemyscript : MonoBehaviour
             life--;
             if (life == 0)
             {
+                GetComponent<BoxCollider2D>().enabled = false;
+                enabled = false;
                 animator.Play("Blast1");
-                Destroy(gameObject,0.5f);
+                Destroy(gameObject,0.7f);
                 logicmanager.instance.updatescore(point);
 
             }

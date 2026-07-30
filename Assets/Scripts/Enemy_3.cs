@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class Enemy_3 : MonoBehaviour
 {
-    
+    private Animator animator;
     public float movespeed = 7f;
     private int point = 20;
     
@@ -41,9 +41,17 @@ public class Enemy_3 : MonoBehaviour
             
             if (life==0)
             {
+                GetComponent<BoxCollider2D>().enabled = false;
+                enabled = false;
+                animator.Play("blast3");
+                Destroy(gameObject, 0.7f);
                 logicmanager.instance.updatescore(point);
-                Destroy(gameObject);
+                
 
+            }
+            else
+            {
+                animator.SetBool("blast3", false);
             }
             
             Destroy(collision.gameObject);
