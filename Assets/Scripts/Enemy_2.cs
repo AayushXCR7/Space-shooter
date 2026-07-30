@@ -41,7 +41,7 @@ public class Enemy_2 : MonoBehaviour
            
             if (life == 0)
             {
-                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<PolygonCollider2D>().enabled = false;
                 enabled = false;
                 animator.Play("Blast2");
                 Destroy(gameObject, 0.7f);

@@ -11,6 +11,7 @@ public class Enemy_3 : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator = GetComponent<Animator>();
         life += logicmanager.instance.bonouslife;
         movespeed += logicmanager.instance.bonousspeed;
         if(life > 6)
@@ -41,7 +42,7 @@ public class Enemy_3 : MonoBehaviour
             
             if (life==0)
             {
-                GetComponent<BoxCollider2D>().enabled = false;
+                GetComponent<PolygonCollider2D>().enabled = false;
                 enabled = false;
                 animator.Play("blast3");
                 Destroy(gameObject, 0.7f);
@@ -51,7 +52,7 @@ public class Enemy_3 : MonoBehaviour
             }
             else
             {
-                animator.SetBool("blast3", false);
+                animator.Play("Enemy3");
             }
             
             Destroy(collision.gameObject);
