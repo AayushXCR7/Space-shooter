@@ -6,10 +6,12 @@ public class enemyscript : MonoBehaviour
     public float movespeed = 5f;
     private int point = 10;
     public float life = 1;
+    private Animator animator;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        animator = GetComponent <Animator>();
         life += logicmanager.instance.bonouslife;
         movespeed += logicmanager.instance.bonousspeed;
         if (life > 4)
@@ -41,10 +43,14 @@ public class enemyscript : MonoBehaviour
             life--;
             if (life == 0)
             {
-
-                Destroy(gameObject);
+                animator.Play("Blast1");
+                Destroy(gameObject,0.5f);
                 logicmanager.instance.updatescore(point);
 
+            }
+            else
+            {
+                animator.Play("Enemy1");
             }
             Destroy(collision.gameObject);
         }
