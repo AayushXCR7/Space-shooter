@@ -19,13 +19,17 @@ public class logicmanager : MonoBehaviour
     public float bonousspeed =0;
     public float bonouslife =0;
     public float bulletrate=0;
-    public int Score ;
+
     public int trackingscore = 0;
     private int difficulty = 1;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static logicmanager instance;
     [SerializeField] private TMP_Text scoretext;
+    public int Score;
+    [SerializeField]private TMP_Text HIGHscore;
+    [SerializeField] private TMP_Text Finalscore;
+    
 
     private void Awake()
     {
@@ -101,5 +105,25 @@ public class logicmanager : MonoBehaviour
         bonousspeed++;
         bulletspwaner.spwanrate -= 0.05f;
         bulletspwaner2.spwanrate -= 0.05f;
+    }
+    public void highscore()
+    {
+        if(PlayerPrefs.HasKey("SavedHighScore"))
+        {
+            if(Score > PlayerPrefs.GetInt("SavedHighScore"))
+            {
+                PlayerPrefs.SetInt("SavedHighScore", Score);
+            }
+        }
+        else
+        {
+            PlayerPrefs.SetInt("SavedHighScore", Score);
+        }
+        PlayerPrefs.Save();
+
+        Finalscore.text = Score.ToString();
+        HIGHscore.text = PlayerPrefs.GetInt("SavedHighScore").ToString();
+
+
     }
 }

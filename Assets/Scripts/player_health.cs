@@ -6,6 +6,7 @@ public class player_health : MonoBehaviour
     
     [SerializeField] private GameObject gameover;
     public int Player_health = 3;
+    
     void Start()
     {
         
@@ -23,6 +24,7 @@ public class player_health : MonoBehaviour
             Player_health--;
             if(Player_health == 0 )
             {
+                logicmanager.instance.highscore();
                 gameover.SetActive(true);
                 Time.timeScale = 0;
 
