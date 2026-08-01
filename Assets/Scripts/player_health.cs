@@ -3,7 +3,8 @@ using UnityEngine;
 public class player_health : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    [SerializeField] private GameObject restart_menu;
+    
+    [SerializeField] private GameObject gameover;
     public int Player_health = 3;
     void Start()
     {
@@ -22,7 +23,7 @@ public class player_health : MonoBehaviour
             Player_health--;
             if(Player_health == 0 )
             {
-                restart_menu.SetActive(true);
+                gameover.SetActive(true);
                 Time.timeScale = 0;
 
             }
