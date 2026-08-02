@@ -27,6 +27,6 @@ Note:- Medium skills required but game gets extremely challanging as player prog
 
 [![Gameplay 3]()
 
- **Gameplay Video:** 
+ **Gameplay Video:** https://youtu.be/qxW3OyDxoLQ
 
- **Play Online:** 
+ **Play Online:**  https://aayushxcr7.itch.io/space-shooter
