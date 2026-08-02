@@ -17,15 +17,24 @@ A copy of Space Shooter made in Unity 2d
 - Score System
 - Increasing difficulty
 - Player highscore 
-  
+## AI Use
+- Only for same button sprites .
+- For uploading game screenshots in Readme. 
+
   
 Note:- Medium skills required but game gets extremely challanging as player progress.
 
-[![Gameplay 1]()
+### Main Menu
+![Main Menu](https://github.com/AayushXCR7/Space-shooter/blob/main/1.1.png?raw=true)
 
-[![Gameplay 2]()
+### Boss Fight
+![Boss Fight](https://github.com/AayushXCR7/Space-shooter/blob/main/Boss1.png?raw=true)
 
-[![Gameplay 3]()
+### Gameplay
+![Gameplay 1](https://github.com/AayushXCR7/Space-shooter/blob/main/Gameplay1.png?raw=true)
+
+### Gameplay (Level Action)
+![Gameplay 2](https://github.com/AayushXCR7/Space-shooter/blob/main/gameplay2.png?raw=true)
 
  **Gameplay Video:** https://youtu.be/qxW3OyDxoLQ
 
