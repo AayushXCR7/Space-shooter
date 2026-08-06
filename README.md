@@ -18,7 +18,7 @@ A copy of Space Shooter made in Unity 2d
 - Increasing difficulty
 - Player highscore 
 ## AI Use
-- Only for same button sprites .
+- Only for some button all the other arts are created by myself .
 - For uploading game screenshots in Readme. 
 
   
